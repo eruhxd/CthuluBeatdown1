@@ -1,0 +1,36 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerAnimation : MonoBehaviour
+{
+    private Animator anim;
+    
+    void Start()
+    {
+        
+    }
+
+    void Awake()
+    {
+        anim = GetComponent<Animator>();
+    }
+
+    public void Punch_1()
+    {
+       anim.SetTrigger(AnimationTags.PUNCH_1_TRIGGER); 
+    }
+
+    public void Punch_2()
+    {
+        anim.SetTrigger(AnimationTags.PUNCH_2_TRIGGER);
+    }
+
+    public void Punch_3()
+    {
+        anim.SetTrigger(AnimationTags.PUNCH_3_TRIGGER);
+    }
+
+
+
+}
