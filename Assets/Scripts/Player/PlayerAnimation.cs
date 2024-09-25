@@ -5,10 +5,10 @@ using UnityEngine;
 public class PlayerAnimation : MonoBehaviour
 {
     private Animator anim;
-    
+
     void Start()
     {
-        
+
     }
 
     void Awake()
@@ -23,7 +23,7 @@ public class PlayerAnimation : MonoBehaviour
 
     public void Punch_1()
     {
-       anim.SetTrigger(AnimationTags.PUNCH_1_TRIGGER); 
+        anim.SetTrigger(AnimationTags.PUNCH_1_TRIGGER);
     }
 
     public void Punch_2()

@@ -57,8 +57,8 @@ public class PlayerMovement : MonoBehaviour
 
     void AnimatePlayerWalk()
     {
-        if(Input.GetAxisRaw(Axis.VERTICAL_AXIS) !=0 ||
-        Input.GetAxisRaw(Axis.HORIZONTAL_AXIS) !=0)
+        if (Input.GetAxisRaw(Axis.VERTICAL_AXIS) != 0 ||
+        Input.GetAxisRaw(Axis.HORIZONTAL_AXIS) != 0)
         {
             player_Anim.Walk(true);
         }
@@ -69,4 +69,3 @@ public class PlayerMovement : MonoBehaviour
 
     }
 }
- 

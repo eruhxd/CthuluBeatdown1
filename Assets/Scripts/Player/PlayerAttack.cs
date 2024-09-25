@@ -8,7 +8,8 @@ public enum ComboState
     PUNCH_1,
     PUNCH_2,
     PUNCH_3,
-    KICK_1
+    KICK_1,
+    TAUNT
 }
 public class PlayerAttack : MonoBehaviour
 {
