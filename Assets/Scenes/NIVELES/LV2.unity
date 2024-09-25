@@ -57556,10 +57556,11 @@ Transform:
   m_GameObject: {fileID: 890989958}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0013229168, y: -0.9947222, z: 0.10243748, w: -0.0057045375}
-  m_LocalPosition: {x: 156, y: 53, z: 172}
+  m_LocalPosition: {x: 164, y: 53, z: 172}
   m_LocalScale: {x: 1.9273, y: 1.4921, z: 1.4918032}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1702745538}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 11.758, y: -180.68, z: -0.222}
 --- !u!114 &890989962
@@ -57585,7 +57586,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -106162,6 +106163,55 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!1 &1702745537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1702745538}
+  - component: {fileID: 1702745539}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1702745538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702745537}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0013229169, y: 0.99472225, z: -0.10243749, w: -0.005704538}
+  m_LocalPosition: {x: 232.40387, y: -1227.8904, z: 3158.7024}
+  m_LocalScale: {x: 0.5188767, y: 0.6701991, z: 0.6703002}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 890989961}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1702745539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702745537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: a887b3b3c1d200b47aa8239bd7e116d3, type: 2}
 --- !u!1 &1704371026
 GameObject:
   m_ObjectHideFlags: 0
