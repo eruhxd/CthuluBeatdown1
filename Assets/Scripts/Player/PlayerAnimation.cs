@@ -16,6 +16,11 @@ public class PlayerAnimation : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
+    public void Walk(bool move)
+    {
+        anim.SetBool(AnimationTags.MOVEMENT, move);
+    }
+
     public void Punch_1()
     {
        anim.SetTrigger(AnimationTags.PUNCH_1_TRIGGER); 
@@ -31,6 +36,14 @@ public class PlayerAnimation : MonoBehaviour
         anim.SetTrigger(AnimationTags.PUNCH_3_TRIGGER);
     }
 
+    public void Kick_1()
+    {
+        anim.SetTrigger(AnimationTags.KICK_1_TRIGGER);
+    }
 
+    public void Taunt()
+    {
+        anim.SetTrigger(AnimationTags.TAUNT);
+    }
 
 }

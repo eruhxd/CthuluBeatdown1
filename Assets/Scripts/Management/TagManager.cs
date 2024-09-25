@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class AnimationTags
 {
-    public const string MOVEMENT = "Movement";
+    public const string MOVEMENT = "Walk";
     public const string PUNCH_1_TRIGGER = "Punch1";
     public const string PUNCH_2_TRIGGER = "Punch2";
     public const string PUNCH_3_TRIGGER = "Punch3";
+    public const string KICK_1_TRIGGER = "Kick1";
     public const string IDLE_ANIMATION = "Idle";
-    
+    public const string TAUNT = "Taunt";
 }
 public class Axis
 {
