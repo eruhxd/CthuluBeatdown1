@@ -306,74 +306,6 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: 19fdb5386c9d99047867324eddddb64a, type: 2}
---- !u!1001 &645603828
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3562803584654315890, guid: 6bc3f0d7f2d160c498c248627a47d761,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 3562803584654315890, guid: 6bc3f0d7f2d160c498c248627a47d761,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 3562803584654315890, guid: 6bc3f0d7f2d160c498c248627a47d761,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 3562803584654315890, guid: 6bc3f0d7f2d160c498c248627a47d761,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.8754261
-      objectReference: {fileID: 0}
-    - target: {fileID: 3562803584654315890, guid: 6bc3f0d7f2d160c498c248627a47d761,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.40821788
-      objectReference: {fileID: 0}
-    - target: {fileID: 3562803584654315890, guid: 6bc3f0d7f2d160c498c248627a47d761,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.23456968
-      objectReference: {fileID: 0}
-    - target: {fileID: 3562803584654315890, guid: 6bc3f0d7f2d160c498c248627a47d761,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.10938163
-      objectReference: {fileID: 0}
-    - target: {fileID: 3562803584654315890, guid: 6bc3f0d7f2d160c498c248627a47d761,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 3562803584654315890, guid: 6bc3f0d7f2d160c498c248627a47d761,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -30
-      objectReference: {fileID: 0}
-    - target: {fileID: 3562803584654315890, guid: 6bc3f0d7f2d160c498c248627a47d761,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8237018383254985459, guid: 6bc3f0d7f2d160c498c248627a47d761,
-        type: 3}
-      propertyPath: m_Name
-      value: Directional Light
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6bc3f0d7f2d160c498c248627a47d761, type: 3}
 --- !u!1 &667527229
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,6 +653,7 @@ GameObject:
   - component: {fileID: 1101570956}
   - component: {fileID: 1101570955}
   - component: {fileID: 1101570954}
+  - component: {fileID: 1101570957}
   m_Layer: 5
   m_Name: NivelesButton
   m_TagString: Untagged
@@ -791,7 +724,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1101570955}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1101570957}
+        m_TargetAssemblyTypeName: LevelsMenu, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1101570955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -830,6 +775,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101570952}
   m_CullTransparentMesh: 1
+--- !u!114 &1101570957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101570952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0ad634312353a844b8279d877f7f61c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Niveles Menu
 --- !u!1 &1306229098
 GameObject:
   m_ObjectHideFlags: 0
@@ -1589,7 +1547,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1600976702}
-  - {fileID: 645603828}
   - {fileID: 2021296739}
   - {fileID: 1023503774}
   - {fileID: 1565869259}

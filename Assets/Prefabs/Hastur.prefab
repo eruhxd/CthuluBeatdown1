@@ -258,6 +258,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hastur
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d3767c3e04e63c4eb06bf040cbdbbc0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2106145266610383287, guid: 0d3767c3e04e63c4eb06bf040cbdbbc0,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
